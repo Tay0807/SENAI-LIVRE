@@ -1,0 +1,100 @@
+:root{
+    --color--corprincipal: #FFF159;
+    --color--oferta: #3682FD;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+}
+
+/* ==========================================================
+header
+============================================================= */
+
+header{
+    background-color: var(--color--corprincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+header img{
+    height: 100px;
+}
+
+header nav a{
+    color: black;
+}
+
+/* ==================================================================
+main
+ ==============================================================*/
+
+ main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    padding: 250px;
+ }
+
+ main p{
+    color: var(--color--oferta) ;
+    cursor: pointer;
+    padding: 30px;
+ }
+
+ main p:hover, main #form nav:hover{
+    font-weight: bold;
+ }
+
+ main input{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    border: solid 1px var(--color--oferta);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.356);
+ }
+
+main #form form{
+   display: grid;
+   width: fit-content;
+}
+
+main label, .h1{
+    text-align: center;
+}
+
+main button{
+    background-color: var(--color--corprincipal);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+main button:hover{
+    padding: 13px;
+}
+
+main #form nav{
+    text-align: center;
+    padding: 20px;
+}
+
+.h1{
+    width: 300px;
+    height: 90px;
+}
+
+
+
+
+
+
+
+
+
+

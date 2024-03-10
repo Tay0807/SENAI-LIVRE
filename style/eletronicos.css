@@ -1,0 +1,208 @@
+:root{
+    --color--corprincipal: #FFF159;
+    --color--preto: black;
+    --color--oferta: #3682FD;
+    --color--branca: white;
+    --color--valor: #2CA469;
+    --color--valorparc: #4DB68A;
+    --color--textos: #383838;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 2s;
+}
+
+/*============================================================
+header
+============================================================ */
+
+header{
+    background-color: var(--color--corprincipal);
+}
+
+#cima #logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* barra de pesquisa */
+#divBusca{
+    background-color:rgba(255, 255, 255, 0.633);
+    border:solid 2px white;
+    border-radius:10px;
+    width:290px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:205px;
+  }
+  
+  #btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:50px;
+    font-weight:bold;
+    background:rgba(255, 255, 255, 0.633);
+  }
+  
+  #divBusca img{
+    float:left;
+    width: 30px;
+    height: 30px;
+}
+
+#cima nav a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    color: var(--color--preto);
+}
+
+
+#cima nav a:hover{
+    text-decoration: underline;
+}
+#cima{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+/* ==============================================================================================
+MAIN
+================================================================================================= */
+
+main{
+    background-color: rgba(0, 0, 0, 0.175);
+}
+
+#branco{
+    background-color: var(--color--branca);
+    width: 600px;
+    border-radius: 20px;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgum, #branco, .imgdois{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.196);
+}
+
+#liquidificador, #batedeira, #Geladeira{
+    width:fit-content;
+    padding: 10px;
+    border-bottom: solid 1px var(--color--preto) ;
+    width: calc(100% - 20px);
+
+}
+
+#branco img{
+    width: 150px;
+    height: 150px;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+}
+
+.estrela{
+    color: var(--color--corprincipal);
+}
+
+.preco{
+    color: var(--color--valor);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.um{
+    text-decoration: underline;
+    padding: 20px;
+}
+
+#lateral{
+    text-align: left;
+}
+
+
+#conteudo nav a:hover{
+    font-size: 20px;
+}
+
+#conteudo nav{
+    text-align: end left;
+}
+
+/* =============================================================================
+Lateral
+============================================================================ */
+
+#lateral, .pp{
+   text-align: center;
+}
+
+.imgum{
+    width: 300px;
+}
+
+.umgum, .imgdois{
+    height: 300px;
+    margin: 30px;
+}
+
+.imgdois{
+    width: 350px;
+}
+
+
+.pp{
+    margin: 40px;
+}
+
+.borda:hover{
+    background-color: rgba(0, 0, 0, 0.337);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+/* ==============================================================================
+footer
+============================================================================= */
+
+footer{
+    background-color: var(--color--corprincipal);
+    background-image: url(../img/rodape.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+footer #palavras{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+
+.p:hover{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 20px;
+}
